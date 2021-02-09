@@ -1,23 +1,19 @@
 # isik = '36906200277'
+# isik = '46305200276'
 
 age = ['18','19','20']
 
-isik=input('Enter your Isikukood:')
-
 def isik11(isik_test):
     isik_list = list(isik_test)
-    kaal2 = [3,4,5,6,7,8,9,1,2,3]
+    kaal1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
+    kaal2 = [3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
     idx  = 0
-    idx2 = 0
     ves1 = 0
     ves2 = 0
     for num in isik_list[0:10]:
-        idx  +=1
-        idx2 +=1
-        if idx==10:
-           idx=1
-        ves1 = ves1 + int(num) * idx
-        ves2 = ves2 + int(num) * idx2
+        ves1 = ves1 + int(num) * kaal1[idx]
+        ves2 = ves2 + int(num) * kaal2[idx]
+        idx += 1
     if ves1%11<10:
         return(str(ves1%11))
     else:
@@ -57,13 +53,21 @@ def haigla(ha_num):
        ha_name = 'Viljandi haigla'
     elif ha_num>=651 and ha_num<=700:
        ha_name = 'Lõuna-Eesti haigla (Võru), Põlva haigla'
+    else:
+        ha_name = 'Not born......'
 
     return ha_name
 
+for ii in range(100):
+    print()
+    isik_ok=input('0 - Exit, 1 Pristupim pomoljas:')
+    if isik_ok=='0':
+        exit()
 
-if len(isik) == 11:
-    if isik.isdigit():
-        if isik[10] == isik11(isik):
+    isik=input('Enter your Isikukood:')
+
+    if len(isik) == 11:
+        if isik.isdigit():
             pol_y = isik[0]
             if  pol_y in '135':
                 pol = 'Man'
@@ -76,18 +80,17 @@ if len(isik) == 11:
 
             vozrast = isik[5:7]+'.'+isik[3:5]+'.'+age_n+isik[1:3]
 
-
             print(pol)
             print(vozrast)
             haigla_name = haigla(int(isik[6:10]))
             print(haigla_name)
+            if isik[10] != isik11(isik):
+                print('11 digits is invalid !!!')
         else:
-            print('11 digits is invalid !!!')
+            print('Bukovki')
     else:
-        print('Bukovki')
-else:
-    if len(isik)<11:
-        print('Korotkovato...')
-    else:
-        print('Dlinnovato')
+        if len(isik)<11:
+            print('Korotkovato...')
+        else:
+            print('Dlinnovato')
 
