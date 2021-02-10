@@ -58,8 +58,7 @@ def haigla(ha_num):
 
     return ha_name
 
-for ii in range(100):
-    print()
+while True:
     isik_ok=input('0 - Exit, 1 Pristupim pomoljas:')
     if isik_ok=='0':
         exit()

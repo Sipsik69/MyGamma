@@ -22,17 +22,25 @@ letters = ['a','b','c','d']
 #     for let in letters:
 #         print(num,let)
 
-if len(numbers)>5:
-    for num in numbers:
-        if num % 2 ==0:
-            if num>5:
-                print('Even and >5')
-            elif num<= 5:
-                   print('Even and Small 5',num)
-            else:
-                print(num,'Even')
-        else:
-            if num>5:
-                print('Odd and >5')
-            else:
-                print(num, 'Odd')
+# if len(numbers)>5:
+#     for num in numbers:
+#         if num % 2 ==0:
+#             if num>5:
+#                 print('Even and >5')
+#             elif num<= 5:
+#                    print('Even and Small 5',num)
+#             else:
+#                 print(num,'Even')
+#         else:
+#             if num>5:
+#                 print('Odd and >5')
+#             else:
+#                 print(num, 'Odd')
+
+people = [['John','New York','35','male'],['Annika','Moscow','35','female']]
+
+for person in people:
+    if person[3] == 'male':
+        print('This is '+person[0]+'. He lives in '+person[1])
+    else:
+        print('This is ' + person[0] + '. She lives in ' + person[1])
