@@ -1,0 +1,5 @@
+t1 = (1,2,3,5,8)
+t2 = (8,2,5)
+t = list(t1)+list(t2)
+t = tuple(t)
+print(t)

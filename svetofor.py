@@ -20,13 +20,13 @@ def svet_minus(tek_svet):
     return tek_svet
 
 def color_v(color_num):
-    clr = ['G','Y','R']
+    clr = ['\033[1;32;40mG','\033[1;33;40mY','\033[1;31;40mR']
     blank = ['','','']
     color_name = '    '+clr[color_num-1]
     return color_name
 
 def color_g(color_num):
-    clr = ['G','Y','R']
+    clr = ['\033[1;32;40mG','\033[1;33;40mY','\033[1;31;40m R']
     blank = ['       ','     ','   ']
     color_name = clr[color_num-1].rjust(color_num,' ')+blank[color_num-1]+ clr[color_num-1]
     return color_name
@@ -36,7 +36,6 @@ vert = 1
 gor  = 3
 condition = True
 while condition:
-1
     print(color_v(vert))
     print(color_g(gor))
     print(color_v(vert))
