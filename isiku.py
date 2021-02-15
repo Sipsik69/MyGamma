@@ -83,7 +83,9 @@ while True:
             print(vozrast)
             haigla_name = haigla(int(isik[6:10]))
             print(haigla_name)
-            if isik[10] != isik11(isik):
+
+
+            if isik[-1] != isik11(isik):
                 print('11 digits is invalid !!!')
         else:
             print('Bukovki')
