@@ -8,7 +8,7 @@
 # file.close()
 # print(file.closed)
 
-# with open('text.txt','r',encoding='UTF*') as file:
+# with open('text.txt','r',encoding='UTF8') as file:
 
     # # data = file.read()
     # # data = file.readline()

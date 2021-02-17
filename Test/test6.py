@@ -1,5 +1,7 @@
 
 test_list = [1,2,3,4,4,5,5,5,7,8,8,8]
+print(len(test_list))
+
 max_count=0
 new_list =[]
 for num in test_list:
