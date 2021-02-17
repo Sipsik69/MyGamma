@@ -1,18 +1,26 @@
+#
+# str =input('enter Stroka palindrom: ')
+# str1 = str.replace(' ','')
+# print(str1)
+#
+# mylist = list(str1)
+# print(mylist)
+#
+# mylist.reverse()
+# newstr = ''
+# for i in mylist:
+#     newstr = newstr+i
+#
+# if str1==newstr:
+#     print('URA !!!', str+' = '+newstr)
+# else:
+#     print('Fig Vam....')
 
-str =input('enter Stroka palindrom: ')
-str1  = ''
-for i in str:
-    if i!=' ':
-        str1=str1+i
-mylist = list(str1)
-print(mylist)
+entry = 'never odd or even'
+# if entry.lower().replace(' ','') == entry.lower().replace(' ','')[::-1]:
+entry = entry.lower().replace(' ','')
 
-mylist.reverse()
-newstr = ''
-for i in mylist:
-    newstr = newstr+i
-
-if str1==newstr:
-    print('URA !!!', str+' = '+newstr)
+if entry == entry[::-1]:
+    print('Ura')
 else:
-    print('Fig Vam....')
+    print('Uvi')

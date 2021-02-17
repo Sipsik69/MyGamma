@@ -1,8 +1,8 @@
-a=float(input('Side A:'))
-b=float(input('Side B:'))
+# a=float(input('Side A:'))
+# b=float(input('Side B:'))
 
-
-c = (a*a+b*b)**0.5
+a, b = input('Side A, B: ').split(', ')
+c = (float(a)**2 + float(b)**2)**0.5
 
 
 print(c)
