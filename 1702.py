@@ -38,3 +38,6 @@ with open('test_text.txt','w',encoding='UTF*') as file:
     file.write('some test string')
     file.seek(0)
     file.write('***T')
+    # посчитать количество слов
+    # колво уникальных слов
+    # убрать знаки препинания
